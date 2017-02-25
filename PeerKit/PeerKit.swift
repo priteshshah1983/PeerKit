@@ -92,7 +92,7 @@ func didFinishReceivingResource(myPeerID: MCPeerID, resourceName: String, fromPe
 
 // MARK: Advertise/Browse
 
-public func transceive(serviceType: String, discoveryInfo: [String: String]? = nil) {
+public func transceive(_ serviceType: String, discoveryInfo: [String: String]? = nil) {
     transceiver.startTransceiving(serviceType: serviceType, discoveryInfo: discoveryInfo)
 }
 
